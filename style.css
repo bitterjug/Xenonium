@@ -1,0 +1,13 @@
+/* Theme Name: Xenonium: A modified Xenon for businesses
+ * URI: 
+ * Description: Xenon Child Theme for business use
+ * Author: Mark Skipper
+ * URI: bitterjug.com
+ * Template: Xenon 
+ * Version: 0.0.1 */ 
+
+@import url("../Xenon/style.css"); 
+/* =Theme customization starts here -------------------------------------------------------------- */
+body {
+	background: #fff;
+}
