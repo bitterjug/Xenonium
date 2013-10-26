@@ -142,27 +142,6 @@ function wpe_excerpt($length_callback='', $more_callback='') {
 }
 
 
-/* CUSTOMIZER */
-
-
-add_action( 'customize_register', 'hg_customize_register' );
-function hg_customize_register($wp_customize)
-{
-  $colors = array();
-  $colors[] = array( 'slug'=>'color_scheme', 'default' => '#C22443', 'label' => __( 'Color scheme', 'YOUR_THEME_NAME' ) );
-  $colors[] = array( 'slug'=>'link_color', 'default' => '#C22443', 'label' => __( 'Link color', 'YOUR_THEME_NAME' ) );
-  $colors[] = array( 'slug'=>'hover_link_color', 'default' => '#EF2349', 'label' => __( 'Link color on hover', 'YOUR_THEME_NAME' ) );
-  foreach($colors as $color)
-  {
-    // SETTINGS
-    $wp_customize->add_setting( $color['slug'], array( 'default' => $color['default'], 'type' => 'option', 'capability' => 'edit_theme_options' ));
-
-    // CONTROLS
-    $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, $color['slug'], array( 'label' => $color['label'], 'section' => 'colors', 'settings' => $color['slug'] )));
-  }
-}
-
-
 /* Credits */
 
 function selfURL() {
