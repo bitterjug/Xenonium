@@ -4,7 +4,6 @@
 }
 
 #secondary{
-	background:#c22443;
 	position: relative;
 
 }
@@ -27,13 +26,11 @@
 }
 
 .logo h1 a:link, .logo h1 a:visited{
-	color:#fff;
+/* color:#fff; :TODO delete this?*/
 }
 
 .logo h2{
 	font-size: 14px;
-	color: #eee;
-	
 }
 
 
@@ -248,10 +245,8 @@ h1.widget-title, h3.sidetitl {
     font-size: 16px;
     font-weight: bold;
     margin:0px 20px;
-    color:#fff;
     line-height: 30px;
     text-transform: uppercase;
-
 }
 
 
@@ -284,12 +279,11 @@ h1.widget-title, h3.sidetitl {
 }
 
 .widget ul li a:link,.widget ul li a:visited {
-    color: #eee;
     text-decoration: none;
 }
 
 .widget ul li a:hover{
-	color:#fff;
+	/* color:#fff; */
 }
 
 .widget.widget_categories ul li,.widget.widget_pages ul li,.widget.widget_archive ul li,.widget.widget_links ul li,.widget.widget_meta ul li {
