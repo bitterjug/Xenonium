@@ -7,9 +7,6 @@
 
 @import url("../Xenon/style.css"); 
 /* =Theme customization starts here -------------------------------------------------------------- */
-body {
-	background: #fff;
-}
 /*
 Theme Name: Xenon
 Theme URL: http://www.fabthemes.com/xenon/
@@ -110,10 +107,6 @@ textarea {
 	font-size: 13px;
 	font-size: 1.3rem;
 	line-height: 1.3;
-}
-
-body{
-	background:#383838;
 }
 
 /* Headings */
