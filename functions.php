@@ -11,12 +11,6 @@ include ( 'getplugins.php' );
 include ( 'aq_resizer.php' );
 include ( 'guide.php' );
 
-/* Theme updater */
-require 'updater.php';
-$example_update_checker = new ThemeUpdateChecker(
-	'Xenon',                                            //Theme folder name, AKA "slug". 
-	'http://www.fabthemes.com/versions/xenon.json' //URL of the metadata file.
-);
 /**
  * Set the content width based on the theme's design and stylesheet.
  *
