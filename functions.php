@@ -5,7 +5,6 @@
  * @package web2feel
  * @since web2feel 1.0
  */
-
 require_once('class-tgm-plugin-activation.php');
 
 include ( 'getplugins.php' );
@@ -168,6 +167,34 @@ function hg_customize_register($wp_customize)
     $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, $color['slug'], array( 'label' => $color['label'], 'section' => 'colors', 'settings' => $color['slug'] )));
   }
 }
+
+
+function mytheme_customize_css()
+{
+    ?>
+         <style type="text/css">
+            
+            #secondary,.cover { background:<?php echo get_option('color_scheme'); ?> }
+                              
+                     
+          
+          
+            a, a:visited {
+				color: <?php echo get_option('link_color'); ?>;
+				text-decoration: none;
+			}
+			
+			a:hover,
+			a:focus,
+			a:active {
+					color: <?php echo get_option('hover_link_color'); ?>;
+				}
+             
+             
+         </style>
+    <?php
+}
+add_action( 'wp_head', 'mytheme_customize_css');
 
 
 /* Credits */
