@@ -7,10 +7,6 @@
 
 }
 
-#primary{
-	background: #161616;
-}
-
 /* Header */
 
 .logo {
@@ -38,7 +34,6 @@
 .topmenu{
 	width:765px;
 	height: 50px;
-	background: #000;
 	margin: 0px 0px 0px 255px;
 }
 
@@ -62,14 +57,12 @@
 	list-style: none;
 	margin: 0;
 	padding: 0;
-	color: #222;
 	font-weight:400;
 	text-transform: uppercase;
 	font-size: 12px;
 	}
 	
 #submenu li a {
-	color: #fff;
 	display: block;
     margin: 0;
 	padding: 17px 10px 17px 10px;
@@ -78,7 +71,7 @@
 	}
 
 #submenu li a:hover, #submenu li a:active, #submenu .current_page_item a  {
-	color: #fff;
+	/* TODO delete this? color: #fff; */
 	
 	}
 	
@@ -108,7 +101,7 @@
 
 	
 #submenu li ul li a:hover ,#submenu li ul li ul li a:hover ,#submenu li ul li ul li ul li a:hover {
-	color: #fff; 
+	/* TODO delete this? color: #fff; */
 		}
 
 
@@ -188,12 +181,12 @@ a.hoverblock{
 }
 
 .coverinfo h2 a:link, .coverinfo h2 a:visited{
-	color:#fff;
+	/* TODO delete this? color: #fff; */
 }
 
 .coverinfo p{
 	font-size: 12px;
-	color: #fff;
+	/* TODO delete this? color: #fff; */
 }
 
 /* Post */
@@ -211,12 +204,12 @@ h1.page-title{
 
 h1.entry-title{
 	margin:0px;
-	color:#fff;
+	/* TODO delete this? color: #fff; */
 }
 
 h1.entry-title a:link,h1.entry-title a:visited {
 	margin:0px;
-	color:#fff;
+	/* TODO delete this? color: #fff; */
 }
 
 .entry-meta{
@@ -314,7 +307,7 @@ h1.widget-title, h3.sidetitl {
 
 .widget #calendar_wrap{
 	padding:0px 20px 20px 20px;
-	color: #fff;
+	/* TODO delete this? color: #fff; */
 }
 
 .squarebanner{
@@ -342,7 +335,6 @@ h1.widget-title, h3.sidetitl {
 /* Searchform */
 
 #searchform{
-	background-color: rgba(0, 0, 0, .2);
 	padding:20px 20px;
 	position: absolute;
 	bottom: 0;
@@ -414,14 +406,14 @@ ol.commentlist li .comment-author {
 }
 
 cite.fn {
-    color: #fff;
+/* TODO delete this?  color: #fff; */
     font-style:normal;
     font-weight:bold;
     font-size:16px;
 }
 
 cite.fn a:link,cite.fn a:visited {
-	color:#fff;
+/* TODO delete this?  color: #fff; */
 }
 .comment-content{
 	line-height: 1.6;
@@ -435,7 +427,7 @@ cite.fn a:link,cite.fn a:visited {
 ol.commentlist li .reply {
 	float:right;
     background: #000;
-    color: #fff;
+/* TODO delete this?  color: #fff; */
     font-size: 12px;
     padding:5px 10px;
     border-radius:3px;
@@ -446,7 +438,7 @@ ol.commentlist li .reply {
 }
 
 ol.commentlist li .reply a {
-	color:#fff;
+/* TODO delete this?  color: #fff; */
 	text-shadow:1px 1px 0px #444;
 }
 
@@ -514,7 +506,7 @@ ol.commentlist li ul.children {
 #respond input#submit {
 	width:130px;
     background:#333;
-    color: #fff;
+/* TODO delete this?  color: #fff; */
     cursor: pointer;
     margin: 10px 0;
     padding: 7px 10px;
@@ -565,12 +557,11 @@ ol.commentlist li ul.children li.depth-2,ol.commentlist li ul.children li.depth-
 }
 
 .pagination .current{
-	color: #fff;
+/* TODO delete this?  color: #fff; */
 }
 /* Footer */
 
 .site-footer{
-	background: #000;
 	padding:20px 0px;
 	font-size:12px;
 	text-align: center;
@@ -579,12 +570,12 @@ ol.commentlist li ul.children li.depth-2,ol.commentlist li ul.children li.depth-
 }
 
 .fcred{
-	color:#fff;
+/* TODO delete this?  color: #fff; */
 	padding:0px 30px;
 }
 
 .fcred a:link, .fcred a:visited{
-	color:#fff;
+/* TODO delete this?  color: #fff; */
 	text-decoration:none;
 	
 }
