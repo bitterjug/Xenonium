@@ -170,34 +170,6 @@ function hg_customize_register($wp_customize)
 }
 
 
-function mytheme_customize_css()
-{
-    ?>
-         <style type="text/css">
-            
-            #secondary,.cover { background:<?php echo get_option('color_scheme'); ?> }
-                              
-                     
-          
-          
-            a, a:visited {
-				color: <?php echo get_option('link_color'); ?>;
-				text-decoration: none;
-			}
-			
-			a:hover,
-			a:focus,
-			a:active {
-					color: <?php echo get_option('hover_link_color'); ?>;
-				}
-             
-             
-         </style>
-    <?php
-}
-add_action( 'wp_head', 'mytheme_customize_css');
-
-
 /* Credits */
 
 function selfURL() {
