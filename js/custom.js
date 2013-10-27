@@ -12,9 +12,9 @@ jQuery(document).ready(function() {
 /* Hover block */
 
 	jQuery('.portfolio-box').hover(function(){
-			jQuery(this).find('div').animate({opacity:'1'},{queue:false,duration:500});
+			jQuery(this).children('div').animate({height:'150'},{queue:false,duration:500});
 	}, function(){
-			jQuery(this).find('div').animate({opacity:'0'},{queue:false,duration:500});
+			jQuery(this).children('div').animate({height:'70'},{queue:false,duration:500});
 		});
 
 	

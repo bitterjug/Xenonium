@@ -157,36 +157,39 @@ a.hoverblock{
 }
 
 .cover{
-	position: absolute;
-	top:0px;
+	position: absolute; /* relative to .hoverblock */
+	bottom:0px;
 	left:0;
 	width:255px;
-	height:255px;
-	background:#C22443;
-	opacity:0;
+	height:70px; /* controlled by js */
 	-webkit-box-shadow: inset 0px 0px 100px 0px rgba(50, 50, 50, .2);
     box-shadow: inset 0px 0px 100px 0px rgba(50, 50, 50, .2);
 }
 
+.coverbg {
+    position: absolute; /* relative to .hoverblock */
+    background: #6f568d;
+    opacity: 0.7;
+    left: 0;
+}
+
 .coverinfo{
-	position: absolute;
+    left: 0;
 	bottom: 0;
-	left:0;
 	padding: 10px 20px;
 }
 
 .coverinfo h2{
 	font-size: 16px;
-	text-transform: uppercase;
 }
 
 .coverinfo h2 a:link, .coverinfo h2 a:visited{
-	/* TODO delete this? color: #fff; */
+     color: #fff; 
 }
 
 .coverinfo p{
 	font-size: 12px;
-	/* TODO delete this? color: #fff; */
+    color: #fff; 
 }
 
 /* Post */
