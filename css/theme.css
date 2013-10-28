@@ -185,6 +185,7 @@ a.hoverblock{
 
 .coverinfo h2 a:link, .coverinfo h2 a:visited{
      color: #fff; 
+     font-weight: bold;
 }
 
 .coverinfo p{
