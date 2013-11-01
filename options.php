@@ -83,6 +83,18 @@ function optionsframework_options() {
 						"id" => "masthead_alt_text",
 						"std" => "Logo image",
 						"type" => "text");		
+
+	$options[] = array( "name" => "Primary section",
+						"desc" => "Section (defined with My Post Order plugin) to display at top of site",
+						"id" => "primary_section",
+						"std" => "primary",
+						"type" => "text");		
+    
+	$options[] = array( "name" => "Secondary section",
+						"desc" => "Section (defined with My Post Order plugin) to display below the primary section",
+						"id" => "secondary_section",
+						"std" => "secondary",
+						"type" => "text");		
 						
 	return $options;
 }
