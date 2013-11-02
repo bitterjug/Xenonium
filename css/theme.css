@@ -341,9 +341,7 @@ h1.widget-title, h3.sidetitl {
 #searchform{
 	padding:20px 20px;
 	position: absolute;
-	bottom: 0;
 	left: 0;
-
 }
 
 #searchsubmit{
@@ -353,7 +351,7 @@ h1.widget-title, h3.sidetitl {
 #s{
 	width: 195px;
 	border-radius: 0px;
-	border: 1px solid #fff;
+	border: 1px solid #ccc;
 }
 /* Comments */
 
