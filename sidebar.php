@@ -20,6 +20,6 @@
 		
 		<?php get_search_form(); ?>
 
-        <div class="squarebanner cf"></div>>
+        <div class="squarebanner cf"></div>
 		
 </div><!-- #secondary .widget-area -->
