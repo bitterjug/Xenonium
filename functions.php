@@ -11,6 +11,24 @@ include ( 'getplugins.php' );
 include ( 'aq_resizer.php' );
 include ( 'guide.php' );
 
+/*
+ * Use Google viewer to render first page of pdf as image
+ */
+function pdf_thumbnail( $pdf_url ){
+    $width=180;
+    return "<img class=pdf src=\"http://docs.google.com/viewer?url=$pdf_url&a=bi&pagenumber=1&w=$width\" alt=\"\" />";
+}
+
+/*
+ * Custom short-code for pdf previews
+ */
+function embed_pdf_with_thumbnail( $atts, $content = null ){
+    return (is_null($content)) ? "" : 
+        // TODO: first if $content is relative url, prepend site base url?
+        "<a href=\"$content\" title=\"\">" .  pdf_thumbnail( $content ) . "</a>";
+}
+add_shortcode('pdf', 'embed_pdf_with_thumbnail');
+
 /**
  * Set the content width based on the theme's design and stylesheet.
  *
