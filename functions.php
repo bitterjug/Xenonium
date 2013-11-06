@@ -15,7 +15,7 @@ include ( 'guide.php' );
  * Use Google viewer to render first page of pdf as image
  */
 function pdf_thumbnail( $pdf_url ){
-    $width=180;
+    $width=160;
     return "<img class=pdf src=\"http://docs.google.com/viewer?url=$pdf_url&a=bi&pagenumber=1&w=$width\" alt=\"[report]\" />";
 }
 

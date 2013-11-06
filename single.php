@@ -25,7 +25,7 @@ get_header(); ?>
 
 			</div><!-- #content .site-content -->
 		</div><!-- #primary .content-area -->
-		<div id="tirtiary" class="content-area grid_3 equal_height" style="background: #eee;">
+		<div id="tirtiary" class="content-area grid_3 equal_height" >
                 <?php 
                     foreach(range(0,4) as $no) {
                         $report = get_field("report_$no");

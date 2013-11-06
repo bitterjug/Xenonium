@@ -203,7 +203,7 @@ h1.page-title{
 	font-size: 18px;
 }
 .entry-header{
-	margin:30px 30px;
+	margin: 20px 10px 0 0;
 }
 
 h1.entry-title{
@@ -220,12 +220,12 @@ h1.entry-title a:link,h1.entry-title a:visited {
 	color:#ccc;
 }
 .entry-content,.entry-summary{
-	padding: 0px 30px;
+	padding: 0 10px 0 0;
 	line-height: 1.6;
 }
 
 footer.entry-meta{
-	margin: 0px 30px;
+	padding: 0 10px 0 0;
 }
 
 /* =Widgets
@@ -580,4 +580,10 @@ ol.commentlist li ul.children li.depth-2,ol.commentlist li ul.children li.depth-
 /* TODO delete this?  color: #fff; */
 	text-decoration:none;
 	
+}
+
+/* ---------------------------- */
+
+#tirtiary div {
+    text-align: center;
 }
