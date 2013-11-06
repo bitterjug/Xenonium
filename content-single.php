@@ -10,7 +10,7 @@
 	<?php
 		$thumb = get_post_thumbnail_id();
 		$img_url = wp_get_attachment_url( $thumb,'full' ); //get full URL to image (use "large" or "medium" if the images too big)
-		$image = aq_resize( $img_url, 765, 400, true ); //resize & crop the image
+		$image = aq_resize( $img_url, 510, 255, true ); //resize & crop the image
 	?>
 						
 	<a href="#" class="hoverblock">	

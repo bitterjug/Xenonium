@@ -8,7 +8,7 @@
 
 get_header(); ?>
 
-		<div id="primary" class="content-area grid_9 equal_height">
+		<div id="primary" class="content-area grid_6 equal_height">
 			<div id="content" class="site-content" role="main">
 
 			<?php while ( have_posts() ) : the_post(); ?>
@@ -25,6 +25,19 @@ get_header(); ?>
 
 			</div><!-- #content .site-content -->
 		</div><!-- #primary .content-area -->
+		<div id="tirtiary" class="content-area grid_3 equal_height" style="background: #eee;">
+                <?php 
+                    foreach(range(0,4) as $no) {
+                        $report = get_field("report_$no");
+                        if($report){
+                        ?>
+                            <div>
+                                <?php echo pdf_link($report); ?>
+                            </div>
+                        <?php }
+                    }
+                ?>
+		</div><!-- #tirtiary .content-area -->
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>

@@ -16,16 +16,22 @@ include ( 'guide.php' );
  */
 function pdf_thumbnail( $pdf_url ){
     $width=180;
-    return "<img class=pdf src=\"http://docs.google.com/viewer?url=$pdf_url&a=bi&pagenumber=1&w=$width\" alt=\"\" />";
+    return "<img class=pdf src=\"http://docs.google.com/viewer?url=$pdf_url&a=bi&pagenumber=1&w=$width\" alt=\"[report]\" />";
 }
 
 /*
- * Custom short-code for pdf previews
+ * Wrap a pfd preview in a link to the original doc
+ */
+function pdf_link( $pdf_url ){
+    return "<a href=\"$pdf_url\" title=\"\">" .  pdf_thumbnail( $pdf_url ) . "</a>";
+}
+
+/*
+ * Custom short-code for pdf link with preview
  */
 function embed_pdf_with_thumbnail( $atts, $content = null ){
-    return (is_null($content)) ? "" : 
-        // TODO: first if $content is relative url, prepend site base url?
-        "<a href=\"$content\" title=\"\">" .  pdf_thumbnail( $content ) . "</a>";
+    // TODO: first if $content is relative url, prepend site base url?
+    return (is_null($content)) ? "" : pdf_link( $content );
 }
 add_shortcode('pdf', 'embed_pdf_with_thumbnail');
 
