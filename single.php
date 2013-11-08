@@ -27,15 +27,35 @@ get_header(); ?>
 		</div><!-- #primary .content-area -->
 		<div id="tirtiary" class="content-area grid_3 equal_height" >
                 <?php 
-                    foreach(range(0,4) as $no) {
-                        $report = get_field("report_$no");
-                        if($report){
-                        ?>
-                            <div>
-                                <?php echo pdf_link($report); ?>
+                    foreach(range(0,3) as $no) {
+                        $report_object = get_field("report_$no");
+                        if($report_object){
+                ?>
+                            <div class="report">
+                                <?php echo pdf_link(
+                                        $report_object["url"],
+                                        $report_object["title"],
+                                        "pdf shadow"); 
+                                ?>
+                                <div class="caption">
+                                <?php echo $report_object["title"]; ?>
+                                </div>
                             </div>
-                        <?php }
+                    <?php }
                     }
+                    $report_url = get_field("report_4");
+                    if ($report_url){ ?>
+                            <div class="report">
+                                <?php echo pdf_link(
+                                        $report_url,
+                                        "report",
+                                        "pdf shadow"); 
+                                ?>
+                                <div class="caption">
+                                <?php echo $report_url; ?>
+                                </div>
+                            </div>
+                    <? }
                 ?>
 		</div><!-- #tirtiary .content-area -->
 

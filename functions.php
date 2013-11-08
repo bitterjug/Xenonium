@@ -14,16 +14,17 @@ include ( 'guide.php' );
 /*
  * Use Google viewer to render first page of pdf as image
  */
-function pdf_thumbnail( $pdf_url ){
+function pdf_thumbnail( $pdf_url, $alt="[report]", $class="" ){
     $width=160;
-    return "<img class=pdf src=\"http://docs.google.com/viewer?url=$pdf_url&a=bi&pagenumber=1&w=$width\" alt=\"[report]\" />";
+    return "<img class=\"$class\" src=\"http://docs.google.com/viewer?url=$pdf_url&a=bi&pagenumber=1&w=$width\" alt=\"$alt\" />";
 }
 
 /*
  * Wrap a pfd preview in a link to the original doc
  */
-function pdf_link( $pdf_url ){
-    return "<a href=\"$pdf_url\" title=\"\">" .  pdf_thumbnail( $pdf_url ) . "</a>";
+function pdf_link( $pdf_url, $title="", $class="" ){
+    return "<a href=\"$pdf_url\" title=\"$title\">" .  
+        pdf_thumbnail( $pdf_url, $title, $class ) . "</a>";
 }
 
 /*

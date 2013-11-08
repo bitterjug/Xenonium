@@ -584,6 +584,14 @@ ol.commentlist li ul.children li.depth-2,ol.commentlist li ul.children li.depth-
 
 /* ---------------------------- */
 
-#tirtiary div {
+div.report {
     text-align: center;
+    height: 255px;
+
+}
+
+.shadow {
+  -moz-box-shadow:    5px 5px 5px 0px #999;
+  -webkit-box-shadow: 5px 5px 5px 0px #999;
+  box-shadow:         5px 5px 5px 0px #999;
 }
