@@ -57,8 +57,8 @@ function my_theme_register_required_plugins() {
 		// This is an example of how to include a plugin from the WordPress Plugin Repository
 		
 		array(
-			'name' 		=> 'Option Framework',
-			'slug' 		=> 'options-framework',
+			'name' 		=> 'My Post Order',
+			'slug' 		=> 'my-posts-order',
 			'required' 	=> true,
 		),
 		
