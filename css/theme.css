@@ -4,7 +4,11 @@
 
 #secondary{
 	position: relative;
+    padding-top: 75px;
+}
 
+#secondary aside {
+    padding-left: 9px;
 }
 
 /* Header */
@@ -68,7 +72,8 @@
 	padding: 17px 10px 16px 10px;
 	text-decoration: none;
 	position: relative;
-	}
+    font-size: 18px;
+}
 
 #submenu li a:hover, #submenu li a:active, #submenu .current_page_item a  {
 	/* TODO delete this? color: #fff; */
@@ -233,25 +238,20 @@ footer.entry-meta{
 
 .widget {
 	margin: 0 0px 20px 0px;
-
-	
 }
 
 h1.widget-title, h3.sidetitl {
-    font-size: 16px;
+    font-size: 22px;
     font-weight: bold;
     margin:0px 20px;
     line-height: 30px;
-    text-transform: uppercase;
 }
-
 
 
 .widget ul {
     list-style-type: none;
     margin: 0px;
     padding: 10px 20px 20px 20px;
-    
 }
 
 .widget li {
@@ -597,6 +597,6 @@ div.report {
 }
 
 #masthead {
-    position: relative;
+    position: absolute;
     top: -75px;
 }
