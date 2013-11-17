@@ -593,7 +593,7 @@ div.report {
 img.report:hover {
     position: relative;
 }
-img.report:hover {
+a img.shadow:hover {
     top: -2px;
     left: -2px;
     -moz-box-shadow:    7px 7px 9px 0px #999;
@@ -607,6 +607,9 @@ img.report:hover {
   box-shadow:         5px 5px 5px 0px #999;
 }
 
+.caption {
+    padding: 5px 10px 0 10px;
+}
 
 #masthead {
     position: absolute;
