@@ -59,12 +59,13 @@ function my_theme_register_required_plugins() {
 		array(
 			'name' 		=> 'My Post Order',
 			'slug' 		=> 'my-posts-order',
-			'required' 	=> true,
+			'required' 	=> true, // required
 		),
-		
-
-		
-	
+        array(
+			'name' 		=> 'Port Types Order',
+			'slug' 		=> 'post-types-order',
+			'required' 	=> false, // recommended
+		),
 		
 	);
 

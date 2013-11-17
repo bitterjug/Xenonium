@@ -11,6 +11,40 @@ include ( 'getplugins.php' );
 include ( 'aq_resizer.php' );
 include ( 'guide.php' );
 
+
+
+add_action( 'init', 'create_post_type' ); 
+function create_post_type() { 
+    /* set up our Project custom post type */
+    register_post_type( 
+        'project', 
+        array( 
+            'labels' => array( 
+                'name' => __( 'Projects' ),
+                'singular_name' => __( 'Project' ),
+                'add_new_item' => __( 'Add Project ' ),
+                'edit_item' => __( 'Edit Project' ),
+                'new_item' => __( 'New Project' ),
+                'view_item' => __( 'View Project' ),
+                'search_items' => __( 'Search Projects' ),
+                'not_fount' => __( 'No Projects found' ),
+            ),
+            'public' => true,
+            'has_archive' => true,
+            'description' => "Projects that may have associated reports",
+            'supports' => array(
+                'title',
+                'editor',
+                'thumbnail',
+                'excerpt',
+                'custom-fields',
+                'revisions'
+            ),
+            'taxonomies' => array( 'category', 'tag' ),
+        )
+    ); 
+}
+
 /*
  * Use Google viewer to render first page of pdf as image
  */
