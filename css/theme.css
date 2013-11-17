@@ -585,9 +585,20 @@ ol.commentlist li ul.children li.depth-2,ol.commentlist li ul.children li.depth-
 /* ---------------------------- */
 
 div.report {
+    position: relative;
     text-align: center;
     height: 255px;
+}
 
+img.report:hover {
+    position: relative;
+}
+img.report:hover {
+    top: -2px;
+    left: -2px;
+    -moz-box-shadow:    7px 7px 9px 0px #999;
+    -webkit-box-shadow: 7px 7px 9px 0px #999;
+    box-shadow:         7px 7px 9px 0px #999;
 }
 
 .shadow {
@@ -595,6 +606,7 @@ div.report {
   -webkit-box-shadow: 5px 5px 5px 0px #999;
   box-shadow:         5px 5px 5px 0px #999;
 }
+
 
 #masthead {
     position: absolute;
