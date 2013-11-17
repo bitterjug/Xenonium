@@ -26,37 +26,32 @@ get_header(); ?>
 			</div><!-- #content .site-content -->
 		</div><!-- #primary .content-area -->
 		<div id="tirtiary" class="content-area grid_3 equal_height" >
-                <?php 
-                    foreach(range(0,3) as $no) {
-                        $report_object = get_field("report_$no");
-                        if($report_object){
-                ?>
-                            <div class="report">
-                                <?php echo pdf_link(
-                                        $report_object["url"],
-                                        $report_object["title"],
-                                        "pdf shadow"); 
-                                ?>
-                                <div class="caption">
-                                <?php echo $report_object["title"]; ?>
-                                </div>
-                            </div>
-                    <?php }
-                    }
-                    $report_url = get_field("report_4");
-                    if ($report_url){ ?>
-                            <div class="report">
-                                <?php echo pdf_link(
-                                        $report_url,
-                                        "report",
-                                        "pdf shadow"); 
-                                ?>
-                                <div class="caption">
-                                <?php echo $report_url; ?>
-                                </div>
-                            </div>
-                    <? }
-                ?>
+
+            <?php while(has_sub_field('reports')): ?>
+                <div class="report">
+                    <?php 
+                        $report_object = get_sub_field('report');
+                        $url = $report_object["url"];
+                        $title = $report_object["title"];
+                        $cover_object = get_sub_field('cover');
+                        $cover_url = $cover_object["url"];
+                        $width = 120;
+                        $height = 170;
+                        $cover = aq_resize( $cover_url, $width, $height, true ); //resize & crop thumbnail if necessary
+                        echo "<a href=\"$url\" title=\"$title\">";
+                        echo "<img class=\"report shadow\" src=\"$cover\" alt=\"$title\"/>";
+                        echo "</a>";
+                    ?>
+                    <div class="caption">
+                    <?php 
+                        echo "<a href=\"$url\" title=\"$title\">";
+                        echo $title; 
+                        echo "</a>";
+                    ?>
+                    </div>
+                </div>
+            <?php endwhile; ?>
+
 		</div><!-- #tirtiary .content-area -->
 
 <?php get_sidebar(); ?>
