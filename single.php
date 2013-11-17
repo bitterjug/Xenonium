@@ -35,19 +35,19 @@ get_header(); ?>
                         $title = $report_object["title"];
                         $cover_object = get_sub_field('cover');
                         $cover_url = $cover_object["url"];
+                        $cover_alt = $cover_object["alt"];
+                        $alt = empty($cover_alt)? $title : $cover_alt;
+                        $report_caption = $report_object["caption"];
+                        $caption = empty($report_caption)? $title : $report_caption;
                         $width = 120;
                         $height = 170;
                         $cover = aq_resize( $cover_url, $width, $height, true ); //resize & crop thumbnail if necessary
                         echo "<a href=\"$url\" title=\"$title\">";
-                        echo "<img class=\"report shadow\" src=\"$cover\" alt=\"$title\"/>";
+                        echo "<img class=\"report shadow\" src=\"$cover\" alt=\"$alt\"/>";
                         echo "</a>";
                     ?>
                     <div class="caption">
-                    <?php 
-                        echo "<a href=\"$url\" title=\"$title\">";
-                        echo $title; 
-                        echo "</a>";
-                    ?>
+                    <?php echo "<a href=\"$url\" title=\"$title\">$caption</a>"; ?>
                     </div>
                 </div>
             <?php endwhile; ?>
