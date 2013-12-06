@@ -243,7 +243,7 @@ footer.entry-meta{
 h1.widget-title, h3.sidetitl {
     font-size: 22px;
     font-weight: bold;
-    margin:0px 20px;
+    margin:0px 10px;
     line-height: 30px;
 }
 
@@ -251,7 +251,7 @@ h1.widget-title, h3.sidetitl {
 .widget ul {
     list-style-type: none;
     margin: 0px;
-    padding: 10px 20px 20px 20px;
+    padding: 10px 20px 20px 10px;
 }
 
 .widget li {
@@ -279,7 +279,8 @@ h1.widget-title, h3.sidetitl {
 }
 
 .widget ul li a:hover{
-	/* color:#fff; */
+	 color:#fff; 
+     background: #6f568d;
 }
 
 .widget.widget_categories ul li,.widget.widget_pages ul li,.widget.widget_archive ul li,.widget.widget_links ul li,.widget.widget_meta ul li {
@@ -288,8 +289,17 @@ h1.widget-title, h3.sidetitl {
 }
 
 .widget.widget_recent_entries ul li  {
-	padding: 7px 0px;
-     border-bottom:1px solid rgba(255, 255, 255, .1);
+    border-bottom:1px solid rgba(111, 86, 141, 0.5);
+}
+
+.widget.widget_recent_entries a {
+    display: block;
+    padding: 4px;
+}
+
+.widget.widget_recent_entries a:hover {
+    background: #6f568d;
+    color: white;
 }
 
 .widget ul#recentcomments li.recentcomments {
