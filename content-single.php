@@ -21,7 +21,7 @@
 		<h1 class="entry-title"><?php the_title(); ?></h1>
 
 		<div class="entry-meta">
-			<?php web2feel_posted_on(); ?>
+            <?php /* web2feel_posted_on(); -- only remove from Projects */ ?>
 		</div><!-- .entry-meta -->
 	</header><!-- .entry-header -->
 
