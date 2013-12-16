@@ -160,9 +160,6 @@ a.hoverblock{
 	position: relative;
 	overflow: hidden;
 }
-.hoverblock img {
-    vertical-align: top;
-}
 
 .cover{
 	position: absolute; /* relative to .hoverblock */
@@ -211,10 +208,7 @@ h1.page-title{
 	font-size: 18px;
 }
 .entry-header{
-	margin: 0px;
-    background-color: #6f568d; /* CE purple */
-    color: #fff;
-    padding: 1.7em 10px;
+	margin: 20px 10px 0 0;
 }
 
 h1.entry-title{
