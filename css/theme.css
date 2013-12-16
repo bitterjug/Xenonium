@@ -231,10 +231,8 @@ h1.entry-title a:link,h1.entry-title a:visited {
 	color:#ccc;
 }
 .entry-content,.entry-summary{
-	padding: 0 10px 0 10px;
-	line-height: 1.7;
-    font-size: larger;
-    text-align: justify;
+	padding: 0 10px 0 0;
+	line-height: 1.6;
 }
 
 footer.entry-meta{
@@ -307,7 +305,7 @@ h1.widget-title, h3.sidetitl {
 
 .widget.widget_recent_entries a:hover {
     background: #6f568d;
-    color: #fff;
+    color: white;
 }
 
 .widget ul#recentcomments li.recentcomments {
