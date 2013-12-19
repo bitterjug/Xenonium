@@ -4,11 +4,11 @@
 
 #secondary{
 	position: relative;
-    padding-top: 75px;
 }
 
 #secondary aside {
     padding-left: 9px;
+    margin-top: 75px;
 }
 
 /* Header */

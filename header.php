@@ -42,6 +42,9 @@
 <![endif]-->
 
 <?php wp_head(); ?>
+<!--[if IE]>
+<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/ie.css" media="screen" type="text/css" />
+<![endif]-->
 </head>
 
 <body <?php body_class(); ?>>
