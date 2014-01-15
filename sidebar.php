@@ -18,8 +18,6 @@
 		
 		<?php if ( ! dynamic_sidebar( 'sidebar-1' ) ) : ?>	<?php endif; // end sidebar widget area ?>
 		
-		<?php get_search_form(); ?>
-
         <div class="squarebanner cf"></div>
 		
 </div><!-- #secondary .widget-area -->

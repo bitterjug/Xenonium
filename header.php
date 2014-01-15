@@ -52,6 +52,7 @@
 <div id="page" class="hfeed site container_12">
 
 <div class="topmenu">
+    <?php get_search_form(); ?>
 	<?php wp_nav_menu( array( 'container_id' => 'submenu', 'theme_location' => 'primary','menu_id'=>'web2feel' ,'menu_class'=>'sfmenu','fallback_cb'=> 'fallbackmenu' ) ); ?>
 
 </div>

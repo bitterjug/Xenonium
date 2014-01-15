@@ -350,8 +350,8 @@ h1.widget-title, h3.sidetitl {
 
 #searchform{
 	padding:20px 20px;
-	position: absolute;
 	left: 0;
+    float: right;
 }
 
 #searchsubmit{
@@ -576,20 +576,12 @@ ol.commentlist li ul.children li.depth-2,ol.commentlist li ul.children li.depth-
 .site-footer{
 	padding:20px 0px;
 	font-size:12px;
-	text-align: center;
 	margin-bottom: 30px;
 	margin-left:255px;
 }
 
-.fcred{
-/* TODO delete this?  color: #fff; */
-	padding:0px 30px;
-}
-
 .fcred a:link, .fcred a:visited{
-/* TODO delete this?  color: #fff; */
 	text-decoration:none;
-	
 }
 
 /* ---------------------------- */
