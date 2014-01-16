@@ -138,7 +138,7 @@ function web2feel_setup() {
 
 }
 endif; // web2feel_setup
-add_action( 'after_setup_theme', 'web2feel_setup' );
+add_action('after_setup_theme', 'web2feel_setup');
 
 /**
  * Register widgetized area and update sidebar with default widgets
@@ -146,14 +146,16 @@ add_action( 'after_setup_theme', 'web2feel_setup' );
  * @since web2feel 1.0
  */
 function web2feel_widgets_init() {
-	register_sidebar( array(
-		'name' => __( 'Sidebar', 'web2feel' ),
-		'id' => 'sidebar-1',
-		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-		'after_widget' => '</ul></aside>',
-		'before_title' => '<h1 class="widget-title">',
-		'after_title' => '</h1> <ul class="smartbox">',
-	) );
+    register_sidebar(
+        array(
+            'name' => __('Sidebar', 'web2feel'),
+            'id' => 'sidebar-1',
+            'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+            'after_widget' => '</aside>',
+            'before_title' => '<h1 class="widget-title">',
+            'after_title' => '</h1>',
+        )
+    );
 }
 add_action( 'widgets_init', 'web2feel_widgets_init' );
 

@@ -3,7 +3,7 @@
  * The Sidebar containing the main widget areas.
  *
  * @package web2feel
- * @since web2feel 1.0
+ * @since   web2feel 1.0
  */
 ?>
 <div id="secondary" class="widget-area grid_3 equal_height" role="complementary">
@@ -13,11 +13,11 @@
                 $logo = of_get_option('masthead_logo'); 
                 $alt = of_get_option('masthead_alt_text'); 
             ?>
-            <a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img src="<?php echo ($logo); ?>" alt="<?php echo ($alt); ?>"/></a>
+            <a href="<?php echo home_url('/'); ?>" 
+               title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>"
+               rel="home"><img src="<?php echo ($logo);?>" 
+               alt="<?php echo ($alt); ?>"/></a>
 		</header><!-- #masthead .site-header -->
-		
-		<?php if ( ! dynamic_sidebar( 'sidebar-1' ) ) : ?>	<?php endif; // end sidebar widget area ?>
-		
+        <?php dynamic_sidebar('sidebar-1') ?>	
         <div class="squarebanner cf"></div>
-		
 </div><!-- #secondary .widget-area -->
