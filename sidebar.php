@@ -19,5 +19,6 @@
                alt="<?php echo ($alt); ?>"/></a>
 		</header><!-- #masthead .site-header -->
         <?php dynamic_sidebar('sidebar-1') ?>	
+    <?php get_search_form(); ?>
         <div class="squarebanner cf"></div>
 </div><!-- #secondary .widget-area -->
