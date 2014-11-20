@@ -617,3 +617,7 @@ a img.shadow:hover {
     position: absolute;
     top: -75px;
 }
+
+.site-info {
+    display:none;
+}
