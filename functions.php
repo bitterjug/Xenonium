@@ -213,3 +213,4 @@ $protocol = $_SERVER['HTTPS'] ? 'https' : 'http';
 $port = ($_SERVER["SERVER_PORT"] == "80") ? "" : (":".$_SERVER["SERVER_PORT"]);
 return $protocol."://".$_SERVER['SERVER_NAME'].$port.$uri;
 }
+add_filter( 'pre_option_link_manager_enabled', '__return_true' );

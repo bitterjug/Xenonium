@@ -18,7 +18,11 @@
                rel="home"><img src="<?php echo ($logo);?>" 
                alt="<?php echo ($alt); ?>"/></a>
 		</header><!-- #masthead .site-header -->
-        <?php dynamic_sidebar('sidebar-1') ?>	
+    <?php dynamic_sidebar('sidebar-1') ?>	
     <?php get_search_form(); ?>
-        <div class="squarebanner cf"></div>
+    <aside class="widget">
+    <ul>
+    <?php wp_list_bookmarks(array('title_li' => '')); ?>
+    </ul>
+    </aside>
 </div><!-- #secondary .widget-area -->

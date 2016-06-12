@@ -278,10 +278,6 @@ h1.widget-title, h3.sidetitl {
     text-decoration: none;
 }
 
-.widget ul li a:hover{
-	 color:#fff; 
-     background: #6f568d;
-}
 
 .widget.widget_categories ul li,.widget.widget_pages ul li,.widget.widget_archive ul li,.widget.widget_links ul li,.widget.widget_meta ul li {
     border-bottom: 1px solid rgba(255, 255, 255, .1);
